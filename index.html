@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;1000&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="start-screen">
+        <h1>Welcome</h1>
+        <p id="welcome-msg">Let us help you bring a sense of calm to your life with our breathing exerise</p>
+        <button id="continue-btn">Continue</button>
+    </div>
+      
+    <div id="main-screen">
+        <div id="btn-container">
+          <button id="start" class="main-btns">start</button> 
+          <button id="stop" class="main-btns">stop</button> 
+          <button id="mode-btn" class="main-btns">dark mode</button> 
+        </div>
+      
+        <div id="breathe-circle">
+          <div id="circle-contents">
+            <p id="breathe-in" class="center">Breathe in</p>
+            <p id="count" class="center">1</p>
+            <p id="breathe-out" class="center">Breathe out</p>
+          </div>
+        </div> 
+    </div>
+      
+    <div id="end-screen">
+         <h1 id="end-title">Exercise Finished</h1>
+        <p id="end-msg">We hope that you are feeling more relaxed. Enjoy the rest of your day.</p>
+        <button id="return-btn">Return to main screen</button>
+    </div>
+ 
+    <script src="main.js"></script>
+</body>
+</html>

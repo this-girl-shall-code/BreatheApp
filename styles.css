@@ -1,0 +1,211 @@
+body{
+    background-repeat: no repeat;
+    background-position: center;
+      background-size: cover;
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: #e0a896;
+    margin: 0;
+}
+  
+h1{
+    color: #033a60;
+    padding-top: 0px;
+    margin-bottom: -10px;
+}
+  
+p{
+    padding: 10px 20px;
+}
+  
+  
+#start-screen, #end-screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    text-align: center;  
+    justify-content: center;
+    height: 40%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+  
+#start-screen{
+    display: flex;
+    margin-top: 160px;
+}
+  
+#end-screen{
+    display: none;
+    margin-top: 180px;
+}
+  
+#main-screen{
+    display: none;
+}
+  
+#btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+  
+button{
+    cursor: pointer;
+    background-color: #546a9b;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    padding: 5px;
+    position: relative;
+    margin: 10px;
+    font-family: 'Nunito', sans-serif;
+    color: #e0a896;
+}
+  
+button:hover{
+    background-color: #e0a896;
+    color: #546a9b;
+    font-weight: 700;
+    box-shadow: 4px 4px 10px rgba(67,67,67,0.5);
+} 
+  
+.main-btns{
+    margin-top: 50px;
+}
+  
+#return-btn{
+    width: 180px;
+}
+  
+#breathe-circle{
+    border-radius: 50%;
+    border: 10px solid #e0a896;
+    box-shadow: -4px -4px 10px rgba(67,67,67,0.2),
+                  inset 4px 4px 10px rgba(0,0,0,0.2),
+                  inset -4px -4px 10px rgba(67,67,67,0.2),
+                  4px 4px 10px rgba(0,0,0,0.3);
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: 120px auto; 
+    animation: ; /*animation is added with JS*/
+}
+  
+  /* this gives the animation for the breathe-circle to grow/shrink */
+@keyframes breathe1 {
+    0% {width: 150px;, height: 150px;}
+    50% {width: 250px; height: 250px;}
+    0% {width: 150px; height: 150px;}
+}
+  
+  
+#circle-contents{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin: 0px auto;
+    animation: ; 
+    background-color: ;
+    border-radius: 50%;
+}
+  
+@keyframes circleContent {
+     0% {width: 150px;, height: 150px;}
+     50% {width: 250px; height: 250px;}
+     0% {width: 150px; height: 150px;}
+}
+  
+.center{
+    position: absolute;
+    margin-top: -7px;
+    width: 150px;
+} 
+  
+#breathe-in {
+    opacity:0;
+    animation: ; /*animation is added with JS*/  
+}
+  
+#breathe-out {
+    opacity:0;
+    animation: ; /*animation is added with JS*/
+}
+  
+  /* these add/remove the correct wording for the centre of the breathe-circle*/
+@keyframes textFadeIn {
+    0% {opacity:0;}
+    2% {opacity:1;}
+    46% {opacity:1;}
+    48% {opacity:0;}
+}
+  
+@keyframes textFadeOut {
+    0% {opacity:0;}
+    50%{opacity:0;}
+    52% {opacity:1;}
+    95% {opacity:1;}
+}
+  
+#count {
+    position: absolute;
+    margin-top: 47px;
+    opacity: 0;
+}
+  
+@media only screen and (width <= 393px){  /* To change style for viewing on mobile phones */
+   
+    #start-screen, #end-screen{
+       height: 50%;
+    }
+    
+    .main-btns{
+    margin-top: 10px;
+  }
+    
+    #breathe-circle{
+      margin: 70px auto;
+    }
+    
+    @keyframes breathe1 {
+    0% {width: 150px;, height: 150px;}
+    50% {width: 220px; height: 220px;}
+    0% {width: 150px; height: 150px;}
+    }
+  
+    @keyframes circleContent {
+     0% {width: 150px;, height: 150px;}
+     50% {width: 220px; height: 220px;}
+     0% {width: 150px; height: 150px;}
+    }
+}
+  
+@media only screen and (width <= 274px){ /* To change style for viewing on tablets */ 
+     
+    #breathe-circle{
+      margin: 30px auto;
+    }
+    
+    @keyframes breathe1 {
+    0% {width: 150px;, height: 150px;}
+    50% {width: 200px; height: 200px;}
+    0% {width: 150px; height: 150px;}
+    }
+  
+    @keyframes circleContent {
+     0% {width: 150px;, height: 150px;}
+     50% {width: 200px; height: 200px;}
+     0% {width: 150px; height: 150px;}
+    }
+}
+  
+  
