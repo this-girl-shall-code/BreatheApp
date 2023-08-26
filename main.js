@@ -15,10 +15,6 @@ const endScreen = document.getElementById("end-screen");
 continueBtn.addEventListener ('click', function(){
   startScreen.style.display = "none";
   mainScreen.style.display = "contents";
-  
-  const width = window.innerWidth;
-  let screenTest = document.getElementById("test");
-  screenTest.innerHTML = width + "px";
 });
 
 document.body.style.backgroundImage = "url(Images/mountains.JPG)";
