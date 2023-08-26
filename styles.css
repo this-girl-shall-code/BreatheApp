@@ -163,14 +163,14 @@ button:hover{
 }
 
 /* To change style for viewing on tablet */
-@media (481px <= width <= 1112px){  
+@media (481px <= width <= 1000px){  
     
     body{
         transform: scale(1.2);
     }
 
     #btn-container{
-        margin-top: 200px;
+        margin-top: 500px;
     }
     
     #start-screen, #end-screen{
@@ -187,9 +187,9 @@ button:hover{
     }
     
     @keyframes breathe1 {
-     0% {width: 150px;, height: 150px;}
-     50% {width: 220px; height: 220px;}
-     0% {width: 150px; height: 150px;}
+    0% {width: 150px;, height: 150px;}
+    50% {width: 220px; height: 220px;}
+    0% {width: 150px; height: 150px;}
     }
   
     @keyframes circleContent {
@@ -201,16 +201,17 @@ button:hover{
 
 /* To change style for viewing on mobile phones */
 @media (275px <= width <= 480px){  
-    body{
-        transform: scale(1.2);
-    }
-    
+        
     #start-screen, #end-screen{
        height: 50%;
     }
 
+    button{
+        transform: scale(1.2);
+    }
+
     #btn-container{
-        margin-top: 200px;
+        margin-top: 300px;
     }
     
     .main-btns{
@@ -219,19 +220,19 @@ button:hover{
     
     #breathe-circle{
       margin: 70px auto;
-      border-color: yellow;
+      border-color: pink;
     }
     
     @keyframes breathe1 {
-     0% {width: 150px;, height: 150px;}
-     50% {width: 220px; height: 220px;}
-     0% {width: 150px; height: 150px;}
+    0% {width: 150px;, height: 150px;}
+    50% {width: 220px; height: 220px;}
+    0% {width: 150px; height: 150px;}
     }
   
     @keyframes circleContent {
-      0% {width: 150px;, height: 150px;}
-      50% {width: 220px; height: 220px;}
-      0% {width: 150px; height: 150px;}
+     0% {width: 150px;, height: 150px;}
+     50% {width: 220px; height: 220px;}
+     0% {width: 150px; height: 150px;}
     }
 }
   
