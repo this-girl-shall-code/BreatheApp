@@ -186,8 +186,7 @@ button:hover{
     }
     
     #breathe-circle{
-      margin: 150px auto;
-      border-color: blue;
+      margin: 160px auto;
       transform: scale(1.2);
     }
     
@@ -212,7 +211,7 @@ button:hover{
     }
 
     button{
-        transform: scale(1.4);
+        transform: scale(1.5);
     }
 
     #btn-container{
@@ -226,7 +225,6 @@ button:hover{
     
     #breathe-circle{
       margin: 100px auto;
-      border-color: yellow;
       transform: scale(1.2);
     }
     
