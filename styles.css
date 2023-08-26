@@ -161,30 +161,35 @@ button:hover{
     margin-top: 47px;
     opacity: 0;
 }
-  
-@media only screen and (width <= 480px){  /* To change style for viewing on mobile phones */
-   
+
+/* To change style for viewing on tablet */
+@media (481px <= width <= 1112px){  
+    
+    body{
+        transform: scale(1.2);
+    }
+
+    #btn-container{
+        margin-top: 200px;
+    }
+    
     #start-screen, #end-screen{
        height: 50%;
     }
     
-    button{
-        font-size: 50px;
-    }
-    
     .main-btns{
         margin-top: 10px;
-  }
+    }
     
     #breathe-circle{
-        margin: 70px auto;
-        border-color: yellow;
+      margin: 70px auto;
+      border-color: blue;
     }
     
     @keyframes breathe1 {
-    0% {width: 150px;, height: 150px;}
-    50% {width: 220px; height: 220px;}
-    0% {width: 150px; height: 150px;}
+     0% {width: 150px;, height: 150px;}
+     50% {width: 220px; height: 220px;}
+     0% {width: 150px; height: 150px;}
     }
   
     @keyframes circleContent {
@@ -193,24 +198,58 @@ button:hover{
      0% {width: 150px; height: 150px;}
     }
 }
+
+/* To change style for viewing on mobile phones */
+@media (275px <= width <= 480px){  
+    body{
+        transform: scale(1.2);
+    }
+    
+    #start-screen, #end-screen{
+       height: 50%;
+    }
+
+    #btn-container{
+        margin-top: 200px;
+    }
+    
+    .main-btns{
+        margin-top: 10px;
+    }
+    
+    #breathe-circle{
+      margin: 70px auto;
+      border-color: yellow;
+    }
+    
+    @keyframes breathe1 {
+     0% {width: 150px;, height: 150px;}
+     50% {width: 220px; height: 220px;}
+     0% {width: 150px; height: 150px;}
+    }
   
-@media only screen and (width <= 274px){ /* To change style for viewing on XSml screen */ 
-     
+    @keyframes circleContent {
+      0% {width: 150px;, height: 150px;}
+      50% {width: 220px; height: 220px;}
+      0% {width: 150px; height: 150px;}
+    }
+}
+  
+/* To change style for viewing on XSml screen */ 
+@media (width <= 274px){
     #breathe-circle{
       margin: 30px auto;
     }
     
     @keyframes breathe1 {
-    0% {width: 150px;, height: 150px;}
-    50% {width: 200px; height: 200px;}
-    0% {width: 150px; height: 150px;}
+     0% {width: 150px;, height: 150px;}
+     50% {width: 200px; height: 200px;}
+     0% {width: 150px; height: 150px;}
     }
-  
+
     @keyframes circleContent {
      0% {width: 150px;, height: 150px;}
      50% {width: 200px; height: 200px;}
      0% {width: 150px; height: 150px;}
     }
 }
-  
-  
