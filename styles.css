@@ -162,7 +162,7 @@ button:hover{
     opacity: 0;
 }
   
-@media only screen and (width <= 393px){  /* To change style for viewing on mobile phones */
+@media only screen and (width <= 480px){  /* To change style for viewing on mobile phones */
    
     #start-screen, #end-screen{
        height: 50%;
@@ -173,11 +173,12 @@ button:hover{
     }
     
     .main-btns{
-    margin-top: 10px;
+        margin-top: 10px;
   }
     
     #breathe-circle{
-      margin: 70px auto;
+        margin: 70px auto;
+        border-color: yellow;
     }
     
     @keyframes breathe1 {
@@ -193,7 +194,7 @@ button:hover{
     }
 }
   
-@media only screen and (width <= 274px){ /* To change style for viewing on tablets */ 
+@media only screen and (width <= 274px){ /* To change style for viewing on XSml screen */ 
      
     #breathe-circle{
       margin: 30px auto;
