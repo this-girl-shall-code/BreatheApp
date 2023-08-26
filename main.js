@@ -48,21 +48,32 @@ modeBtn.addEventListener ('click', function (){
 
 let stopped = false; //when the stop button is pressed - this becomes true and will stop the keepCounting function
 
+let started = false; //when the start button is pressed this will change to true and then if the start button is pressed again before the stop button, nothing will happen
+
+
 //function to start using the CSS animations when the start button is clicked
 startButton.addEventListener('click', function (){
-  stopped = false;
-  console.log(stopped);
-  breatheCircle.style.animation = "10s infinite breathe1";
-  breatheIn.style.animation = "10s infinite textFadeIn";
-  breatheOut.style.animation = "10s infinite textFadeOut";
-  circleContent.style.animation = "10s infinite circleContent";
-  circleContent.style.backgroundColor = "rgba(0,0,0,0.3)";
-  count.style.opacity = "1";
-  keepCounting()
+  if (!started){
+    started = true;
+    stopped = false;
+    console.log(stopped);
+    breatheCircle.style.animation = "10s infinite breathe1";
+    breatheIn.style.animation = "10s infinite textFadeIn";
+    breatheOut.style.animation = "10s infinite textFadeOut";
+    circleContent.style.animation = "10s infinite circleContent";
+    circleContent.style.backgroundColor = "rgba(0,0,0,0.3)";
+    count.style.opacity = "1";
+    keepCounting()
+  }else{
+    if (started){
+      return;
+    }
+  }
 });
 
 //function to stop using the CSS animations when the stop button is clicked
 stopButton.addEventListener('click', function (){
+  started = false;
   stopped = true;
   console.log(stopped);
   breatheCircle.style.animation = "";
