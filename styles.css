@@ -168,6 +168,10 @@ button:hover{
        height: 50%;
     }
     
+    button{
+        font-size: 12px;
+    }
+    
     .main-btns{
     margin-top: 10px;
   }
